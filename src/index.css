@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0f0f0f;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1e1e1e;
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #333;
+  }
+
+  input,
+  textarea,
+  select {
+    background-color: #0f0f0f;
+    color: #ffffff;
+    border: 1px solid #1e1e1e;
+    font-family: 'DM Sans', sans-serif;
+    outline: none;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: rgba(0, 255, 65, 0.5);
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #444;
+  }
+
+  select option {
+    background-color: #0f0f0f;
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    background-color: #000000;
+    color: #00FF41;
+    border: 1px solid #00FF41;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    letter-spacing: 0.05em;
+  }
+
+  .btn-primary:hover {
+    background-color: #00FF41;
+    color: #000000;
+  }
+
+  .card {
+    background-color: #0f0f0f;
+    border: 1px solid #1e1e1e;
+    border-radius: 4px;
+  }
+
+  .card-accent {
+    background-color: #161616;
+    border: 1px dashed rgba(0, 255, 65, 0.3);
+    border-radius: 4px;
+  }
+
+  .studio858-wordmark {
+    position: fixed;
+    bottom: 12px;
+    right: 16px;
+    font-family: 'Space Mono', monospace;
+    font-size: 11px;
+    color: #333333;
+    z-index: 10;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+  }
+
+  @media (max-width: 767px) {
+    .studio858-wordmark {
+      bottom: 72px;
+    }
+  }
+}
+
+@layer utilities {
+  .font-bebas {
+    font-family: 'Bebas Neue', cursive;
+  }
+
+  .font-mono-space {
+    font-family: 'Space Mono', monospace;
+  }
+
+  .font-dm {
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .border-accent {
+    border: 1px dashed rgba(0, 255, 65, 0.3);
+  }
+
+  .text-green {
+    color: #00FF41;
+  }
+
+  .text-amber {
+    color: #EF9F27;
+  }
+
+  .text-blue-custom {
+    color: #5aabf5;
+  }
+
+  .text-purple-custom {
+    color: #a88bfa;
+  }
+
+  .text-grey {
+    color: #888888;
+  }
+
+  .bg-card1 {
+    background-color: #0f0f0f;
+  }
+
+  .bg-card2 {
+    background-color: #161616;
+  }
+
+  .border-default {
+    border-color: #1e1e1e;
+  }
+}
