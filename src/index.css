@@ -15,7 +15,7 @@
     height: 100%;
     background-color: #000000;
     color: #ffffff;
-    font-family: 'DM Sans', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -44,7 +44,7 @@
     background-color: #0f0f0f;
     color: #ffffff;
     border: 1px solid #1e1e1e;
-    font-family: 'DM Sans', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     outline: none;
   }
 
@@ -70,12 +70,13 @@
     background-color: #000000;
     color: #00FF41;
     border: 1px solid #00FF41;
-    font-family: 'Space Mono', monospace;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 12px;
+    font-weight: 500;
     padding: 8px 16px;
     cursor: pointer;
     transition: all 0.15s ease;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
   }
 
   .btn-primary:hover {
@@ -99,12 +100,13 @@
     position: fixed;
     bottom: 12px;
     right: 16px;
-    font-family: 'Space Mono', monospace;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 11px;
+    font-weight: 500;
     color: #333333;
     z-index: 10;
     pointer-events: none;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
   }
 
   @media (max-width: 767px) {
@@ -115,16 +117,20 @@
 }
 
 @layer utilities {
+  /* All font utilities resolve to Helvetica Neue — visual hierarchy via weight/size/tracking */
   .font-bebas {
-    font-family: 'Bebas Neue', cursive;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
   }
 
   .font-mono-space {
-    font-family: 'Space Mono', monospace;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
   }
 
   .font-dm {
-    font-family: 'DM Sans', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
   }
 
   .border-accent {

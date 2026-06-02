@@ -14,9 +14,9 @@ export default {
         border: '#1e1e1e',
       },
       fontFamily: {
-        bebas: ['"Bebas Neue"', 'cursive'],
-        mono: ['"Space Mono"', 'monospace'],
-        sans: ['"DM Sans"', 'sans-serif'],
+        bebas: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+        mono: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
+        sans: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
       },
     },
   },
